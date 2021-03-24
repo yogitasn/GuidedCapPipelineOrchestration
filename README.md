@@ -55,7 +55,26 @@ display(dbutils.fs.ls("dbfs:/mnt/FileStore/raw/"))
 
 ```
 
+*  Local Environment Setup using Databricks connect
+  ```
+  * Reference: https://docs.databricks.com/dev-tools/databricks-connect.html
+    * Your Spark job is planned in local but executed on the remote cluster
+    * Allow the user to step through and debug Spark code in the local environment
+
+    * requirements.txt file example:
+    databricks-connect(7.3.7) : The databricks-connect version should match the Databricks cluster version i.e. 7.3 LTS
+    * Configuration
+        * The trick is one cannot mess up the delicate databricks-connect and pyspark versions
+
+    * Test with this example:
+    from pyspark.sql import SparkSession
+    spark = SparkSession.builder.appName("test").getOrCreate()
+    print(spark.range(100).count())  # it executes on the cluster, where you can see the record
+
+  ```
+
 2. Navigate to the project folder and execute the following commands
+
 
   * <b>Local Execution</b>: 
 
@@ -122,3 +141,4 @@ main(
 ### Screenshot
 
 Refer the Pipeline Orchestration document for detailed steps and screenshots
+
