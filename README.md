@@ -31,6 +31,7 @@ The Project is created with the following technologies:
 
 ## Setup
 
+<hr/>
 1. Create a Databricks cluster (7.3 LTS) and notebook and run the below code to mount the raw data files from Azure Blob Container to DBFS
 
 ```
@@ -64,7 +65,9 @@ display(dbutils.fs.ls("dbfs:/mnt/FileStore/raw/"))
 python etldriver.py
 
 ```
+<hr/>
 
+<hr/>
 * Job Execution on databricks
 1. Execute the below commands to create a Python package file
 
@@ -97,6 +100,7 @@ main(
 3. Create a job and attach the above notebook to the job
 4. Execute the spark job.
 
+<hr/>
 
 * Python files:
 
