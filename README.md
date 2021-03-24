@@ -19,12 +19,12 @@ In this project we need to orchestrate the pipeline, connecting all of the indiv
 
 ## Technologies
 The Project is created with the following technologies:
-* Azure Storage-Containers/File Share: To store the raw data
-* Databricks-connect: Allow the user to step through and debug Spark code in the local environment and execute it on remote Azure Databricks cluster (7.3 LTS) - Local Execution
+* Azure Storage-Containers/File Share: To store the raw data.
+* Databricks-connect: Allow the user to step through and debug Spark code in the local environment and execute it on remote Azure Databricks cluster (7.3 LTS) - Local Execution.
     * [Reference](https://docs.databricks.com/dev-tools/databricks-connect.html)
        * Python 3.7.5 (which matches the remote cluster python version)
 
-* Azure Database for Postgres (Single Server): To store the job tracking status in the Postgres table
+* Azure Database for Postgres (Single Server): To store the job tracking status in the Postgres.
 
     
 
@@ -33,7 +33,7 @@ The Project is created with the following technologies:
 
 <hr/>
 
-1. Create a Databricks cluster (7.3 LTS) and notebook and run the below code to mount the raw data files from Azure Blob Container to DBFS
+1. Create a Databricks cluster (7.3 LTS) and notebook and run the below code to mount the raw data files from Azure Blob Container to DBFS:
 
 ```
 storageAccountName = ""
@@ -55,14 +55,14 @@ display(dbutils.fs.ls("dbfs:/mnt/FileStore/raw/"))
 
 ```
 
-*  Local Environment Setup using Databricks connect
+*  Local Environment Setup using Databricks connect:
   ```
   * Reference: https://docs.databricks.com/dev-tools/databricks-connect.html
-    * Your Spark job is planned in local but executed on the remote cluster
+    * Your Spark job is planned local but executed on the remote cluster
     * Allow the user to step through and debug Spark code in the local environment
 
     * requirements.txt file example:
-    databricks-connect(7.3.7) : The databricks-connect version should match the Databricks cluster version i.e. 7.3 LTS
+    databricks-connect(7.3.7): The databricks-connect version should match the Databricks cluster version i.e. 7.3 LTS
     * Configuration
         * The trick is one cannot mess up the delicate databricks-connect and pyspark versions
 
@@ -73,7 +73,7 @@ display(dbutils.fs.ls("dbfs:/mnt/FileStore/raw/"))
 
   ```
 
-2. Navigate to the project folder and execute the following commands
+2. Navigate to the project folder and execute the following commands:
 
 
   * <b>Local Execution</b>: 
@@ -88,7 +88,7 @@ display(dbutils.fs.ls("dbfs:/mnt/FileStore/raw/"))
 
 * <b>Execution in Production</b>
 
-1. Execute the below commands to create a Python package file
+1. Execute the below commands to create a Python package file:
 
 ```
 Setup file
@@ -101,8 +101,8 @@ pip install -I Pipelineorchestration/dist/Pipelineorchestration-1.0-py3-none-any
 cd Pipelineorchestration
 ```
 
-2. Install the .whl file in the Databricks cluster created above
-3. Create a notebook and paste and execute the following commands
+2. Install the .whl file in the Databricks cluster created above.
+3. Create a notebook and paste and execute the following commands:
 
 ```
 from Pipelineorchestration import main
@@ -117,7 +117,7 @@ main(
 
 
 ```
-3. Create a job and attach the above notebook to the job
+3. Create a job and attach the above notebook to the job.
 4. Execute the spark job.
 
 <hr/>
@@ -140,5 +140,5 @@ main(
 
 ### Screenshot
 
-Refer the Pipeline Orchestration document for detailed steps and screenshots
+Refer to the Pipeline Orchestration document for detailed steps and screenshots
 
