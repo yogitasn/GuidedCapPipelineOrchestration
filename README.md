@@ -32,6 +32,7 @@ The Project is created with the following technologies:
 ## Setup
 
 <hr/>
+
 1. Create a Databricks cluster (7.3 LTS) and notebook and run the below code to mount the raw data files from Azure Blob Container to DBFS
 
 ```
@@ -65,10 +66,9 @@ display(dbutils.fs.ls("dbfs:/mnt/FileStore/raw/"))
 python etldriver.py
 
 ```
-<hr/>
 
-<hr/>
-* Job Execution on databricks
+
+* <b>Execution in Production</b>
 1. Execute the below commands to create a Python package file
 
 ```
@@ -81,6 +81,7 @@ cd ..
 pip install -I Pipelineorchestration/dist/Pipelineorchestration-1.0-py3-none-any.whl  # Must be outside the project root
 cd Pipelineorchestration
 ```
+
 2. Install the .whl file in the Databricks cluster created above
 3. Create a notebook and paste and execute the following commands
 
@@ -102,7 +103,7 @@ main(
 
 <hr/>
 
-* Python files:
+* <b>Python files</b>:
 
 <hr/>
 
