@@ -1,0 +1,114 @@
+(base) C:\>cd Pipelineorchestration
+
+(base) C:\Pipelineorchestration>python setup.py sdist bdist_wheel
+running sdist
+running egg_info
+creating Pipelineorchestration.egg-info
+writing Pipelineorchestration.egg-info\PKG-INFO
+writing dependency_links to Pipelineorchestration.egg-info\dependency_links.txt
+writing top-level names to Pipelineorchestration.egg-info\top_level.txt
+writing manifest file 'Pipelineorchestration.egg-info\SOURCES.txt'
+reading manifest file 'Pipelineorchestration.egg-info\SOURCES.txt'
+writing manifest file 'Pipelineorchestration.egg-info\SOURCES.txt'
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be supplied
+
+creating Pipelineorchestration-1.0
+creating Pipelineorchestration-1.0\Pipelineorchestration
+creating Pipelineorchestration-1.0\Pipelineorchestration.egg-info
+creating Pipelineorchestration-1.0\Pipelineorchestration\analytical_processing
+creating Pipelineorchestration-1.0\Pipelineorchestration\eod_load
+creating Pipelineorchestration-1.0\Pipelineorchestration\job_tracker
+creating Pipelineorchestration-1.0\Pipelineorchestration\preprocessing
+copying files to Pipelineorchestration-1.0...
+copying README.md -> Pipelineorchestration-1.0
+copying setup.py -> Pipelineorchestration-1.0
+copying Pipelineorchestration\__init__.py -> Pipelineorchestration-1.0\Pipelineorchestration
+copying Pipelineorchestration\config.cfg -> Pipelineorchestration-1.0\Pipelineorchestration
+copying Pipelineorchestration\etldriver.py -> Pipelineorchestration-1.0\Pipelineorchestration
+copying Pipelineorchestration.egg-info\PKG-INFO -> Pipelineorchestration-1.0\Pipelineorchestration.egg-info
+copying Pipelineorchestration.egg-info\SOURCES.txt -> Pipelineorchestration-1.0\Pipelineorchestration.egg-info
+copying Pipelineorchestration.egg-info\dependency_links.txt -> Pipelineorchestration-1.0\Pipelineorchestration.egg-info
+copying Pipelineorchestration.egg-info\top_level.txt -> Pipelineorchestration-1.0\Pipelineorchestration.egg-info
+copying Pipelineorchestration\analytical_processing\__init__.py -> Pipelineorchestration-1.0\Pipelineorchestration\analytical_processing
+copying Pipelineorchestration\analytical_processing\analytical_transformations.py -> Pipelineorchestration-1.0\Pipelineorchestration\analytical_processing
+copying Pipelineorchestration\eod_load\__init__.py -> Pipelineorchestration-1.0\Pipelineorchestration\eod_load
+copying Pipelineorchestration\eod_load\etl_load.py -> Pipelineorchestration-1.0\Pipelineorchestration\eod_load
+copying Pipelineorchestration\job_tracker\Tracker.py -> Pipelineorchestration-1.0\Pipelineorchestration\job_tracker
+copying Pipelineorchestration\job_tracker\__init__.py -> Pipelineorchestration-1.0\Pipelineorchestration\job_tracker
+copying Pipelineorchestration\preprocessing\__init__.py -> Pipelineorchestration-1.0\Pipelineorchestration\preprocessing
+copying Pipelineorchestration\preprocessing\process_raw.py -> Pipelineorchestration-1.0\Pipelineorchestration\preprocessing
+Writing Pipelineorchestration-1.0\setup.cfg
+creating dist
+Creating tar archive
+removing 'Pipelineorchestration-1.0' (and everything under it)
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build\lib
+creating build\lib\Pipelineorchestration
+copying Pipelineorchestration\etldriver.py -> build\lib\Pipelineorchestration
+copying Pipelineorchestration\__init__.py -> build\lib\Pipelineorchestration
+creating build\lib\Pipelineorchestration\analytical_processing
+copying Pipelineorchestration\analytical_processing\analytical_transformations.py -> build\lib\Pipelineorchestration\analytical_processing
+copying Pipelineorchestration\analytical_processing\__init__.py -> build\lib\Pipelineorchestration\analytical_processing
+creating build\lib\Pipelineorchestration\eod_load
+copying Pipelineorchestration\eod_load\etl_load.py -> build\lib\Pipelineorchestration\eod_load
+copying Pipelineorchestration\eod_load\__init__.py -> build\lib\Pipelineorchestration\eod_load
+creating build\lib\Pipelineorchestration\job_tracker
+copying Pipelineorchestration\job_tracker\Tracker.py -> build\lib\Pipelineorchestration\job_tracker
+copying Pipelineorchestration\job_tracker\__init__.py -> build\lib\Pipelineorchestration\job_tracker
+creating build\lib\Pipelineorchestration\preprocessing
+copying Pipelineorchestration\preprocessing\process_raw.py -> build\lib\Pipelineorchestration\preprocessing
+copying Pipelineorchestration\preprocessing\__init__.py -> build\lib\Pipelineorchestration\preprocessing
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64
+creating build\bdist.win-amd64\wheel
+creating build\bdist.win-amd64\wheel\Pipelineorchestration
+creating build\bdist.win-amd64\wheel\Pipelineorchestration\analytical_processing
+copying build\lib\Pipelineorchestration\analytical_processing\analytical_transformations.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration\analytical_processing
+copying build\lib\Pipelineorchestration\analytical_processing\__init__.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration\analytical_processing
+creating build\bdist.win-amd64\wheel\Pipelineorchestration\eod_load
+copying build\lib\Pipelineorchestration\eod_load\etl_load.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration\eod_load
+copying build\lib\Pipelineorchestration\eod_load\__init__.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration\eod_load
+copying build\lib\Pipelineorchestration\etldriver.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration
+creating build\bdist.win-amd64\wheel\Pipelineorchestration\job_tracker
+copying build\lib\Pipelineorchestration\job_tracker\Tracker.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration\job_tracker
+copying build\lib\Pipelineorchestration\job_tracker\__init__.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration\job_tracker
+creating build\bdist.win-amd64\wheel\Pipelineorchestration\preprocessing
+copying build\lib\Pipelineorchestration\preprocessing\process_raw.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration\preprocessing
+copying build\lib\Pipelineorchestration\preprocessing\__init__.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration\preprocessing
+copying build\lib\Pipelineorchestration\__init__.py -> build\bdist.win-amd64\wheel\.\Pipelineorchestration
+running install_data
+creating build\bdist.win-amd64\wheel\Pipelineorchestration-1.0.data
+creating build\bdist.win-amd64\wheel\Pipelineorchestration-1.0.data\data
+creating build\bdist.win-amd64\wheel\Pipelineorchestration-1.0.data\data\config
+copying Pipelineorchestration\config.cfg -> build\bdist.win-amd64\wheel\Pipelineorchestration-1.0.data\data\config
+running install_egg_info
+Copying Pipelineorchestration.egg-info to build\bdist.win-amd64\wheel\.\Pipelineorchestration-1.0-py3.8.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\Pipelineorchestration-1.0.dist-info\WHEEL
+creating 'dist\Pipelineorchestration-1.0-py3-none-any.whl' and adding 'build\bdist.win-amd64\wheel' to it
+adding 'Pipelineorchestration/__init__.py'
+adding 'Pipelineorchestration/etldriver.py'
+adding 'Pipelineorchestration/analytical_processing/__init__.py'
+adding 'Pipelineorchestration/analytical_processing/analytical_transformations.py'
+adding 'Pipelineorchestration/eod_load/__init__.py'
+adding 'Pipelineorchestration/eod_load/etl_load.py'
+adding 'Pipelineorchestration/job_tracker/Tracker.py'
+adding 'Pipelineorchestration/job_tracker/__init__.py'
+adding 'Pipelineorchestration/preprocessing/__init__.py'
+adding 'Pipelineorchestration/preprocessing/process_raw.py'
+adding 'Pipelineorchestration-1.0.data/data/config/config.cfg'
+adding 'Pipelineorchestration-1.0.dist-info/METADATA'
+adding 'Pipelineorchestration-1.0.dist-info/WHEEL'
+adding 'Pipelineorchestration-1.0.dist-info/top_level.txt'
+adding 'Pipelineorchestration-1.0.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel
+
+(base) C:\Pipelineorchestration>cd ..
