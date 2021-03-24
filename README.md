@@ -57,18 +57,18 @@ display(dbutils.fs.ls("dbfs:/mnt/FileStore/raw/"))
 
 2. Navigate to the project folder and execute the following commands
 
+  * <b>Local Execution</b>: 
 
-* <b>Local Execution</b>: 
+    * The driver will call the transformation code for executing the ETL load to load end of day daily records for trade and quote and finally perform analytical transformations on those records to get the final quote table
 
-* The driver will call the transformation code for executing the ETL load to load end of day daily records for trade and quote and finally perform analytical transformations on those records to get the final quote table
+      ```
+      python etldriver.py
 
-```
-python etldriver.py
-
-```
+      ```
 
 
 * <b>Execution in Production</b>
+
 1. Execute the below commands to create a Python package file
 
 ```
